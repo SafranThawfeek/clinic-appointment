@@ -1,4 +1,6 @@
-import api from './apiClient';
-export const getAppointments = () => api.get('/appointments');
-export const updateAppointment = (id, data) => api.put(`/appointments/${id}`, data);
-export const deleteAppointment = (id) => api.delete(`/appointments/${id}`);
+import apiClient from "./apiClient";
+
+export const getAppointments = () => apiClient.get("/appointments");
+export const createAppointment = (data) => apiClient.post("/appointments", data);
+export const updateAppointment = (id, data) => apiClient.put(`/appointments/${id}`, data);
+export const deleteAppointment = (id) => apiClient.delete(`/appointments/${id}`);

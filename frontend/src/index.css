@@ -3,3 +3,28 @@
 @tailwind utilities;
 
 html, body, #root { height: 100%; background-color: #f9fafb; }
+
+.card {
+  @apply bg-white rounded-2xl shadow-md p-6;
+}
+
+
+.react-calendar {
+  width: 100% !important;
+  background-color: white;
+  border: none !important;
+  font-family: 'Inter', sans-serif;
+  border-radius: 12px;
+  padding: 10px;
+}
+.react-calendar__tile--now {
+  background: #dbeafe !important;
+  border-radius: 8px;
+  color: #1e3a8a !important;
+}
+.react-calendar__tile--active {
+  background: #2563eb !important;
+  color: white !important;
+  border-radius: 8px;
+}
+
